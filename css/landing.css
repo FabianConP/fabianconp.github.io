@@ -1,0 +1,12 @@
+.mdl-layout__header {
+    background-color: #34495e;
+}
+
+.mdl-layout__drawer-button{
+    padding-top: 12px;
+}
+
+#carousel-generic img{
+    background: #CCC;
+    filter: brightness(60%);
+}

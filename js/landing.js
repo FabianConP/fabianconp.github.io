@@ -2,7 +2,6 @@ function setCarouselHeight(){
     var navHeight = $( ".mdl-layout__header" ).height();
     var carouselHeight = $(window).height() - navHeight;
     $( ".carousel .item" ).height(carouselHeight);
-    console.log(carouselHeight);
 }
 
 $( document ).ready(function() {
@@ -10,7 +9,6 @@ $( document ).ready(function() {
 });
 
 $( window ).resize(function() {
-    console.log("Cambio");
     setCarouselHeight();
 });
 

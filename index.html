@@ -1,86 +1,194 @@
 <html>
-	<head>
-
-		<title>Home - Fabian Conejo</title>
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<script src="js/jquery-3.2.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-
-		<link rel="stylesheet" href="css/landing.css">
-		<script src="js/landing.js"></script>
-	</head>
-	<body>
-			<!-- Always shows a header, even in smaller screens. -->
-		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header">
-				<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<span class="mdl-layout-title">Fabian Conejo</span>
-				<!-- Add spacer, to align navigation to the right -->
-				<div class="mdl-layout-spacer"></div>
-				<!-- Navigation. We hide it in small screens. -->
-				<nav class="mdl-navigation mdl-layout--large-screen-only">
-						<a class="mdl-navigation__link" href="index.html">HOME</a>
-						<a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
-						<a class="mdl-navigation__link" href="">ABOUT</a>
-				</nav>
-				</div>
-		</header>
-		<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">Fabian Conejo</span>
-				<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="">Home</a>
-				<a class="mdl-navigation__link" href="">Projects</a>
-				<a class="mdl-navigation__link" href="">About</a>
-				</nav>
-		</div>
-		<main class="mdl-layout__content">
-				<div id="carousel-generic" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-generic" data-slide-to="1"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<div class="mdl-card__title">
-								<img src="images/projects.jpg" alt="Projects">
-							</div>
-							<div class="carousel-caption">
-								<a href="projects.html"><h1>Projects</h1>
-								<p>Learn more about my projects</p></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="mdl-card__title">
-								<img src="images/about.jpg" alt="About">
-							</div>
-							<div class="carousel-caption">
-								<h1>Who is Fabian Conejo?</h1>
-								<p>Learn more about my education, hobbies, ...</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-		</main>
-		</div>
-	</body>
+  <head>
+    <title>Home - Fabian Conejo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="js/landing.js"></script>
+  </head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Fabian Conejo</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="index.html">HOME</a>
+          <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
+          <a class="mdl-navigation__link" href="">ABOUT</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Fabian Conejo</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Projects</a>
+        <a class="mdl-navigation__link" href="">About</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-generic" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/projects.jpg" alt="Projects" class="img-responsive" id="img-projects">
+            <div class="carousel-caption">
+              <a href="projects.html">
+                <h1>Projects</h1>
+                <p>Learn more about my projects</p>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/about.jpg" alt="About" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Who is Fabian Conejo?</h1>
+              <p>Learn more about my education, hobbies, ...</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--PROJECTS-->
+      <div id = "projects-wrapper" class="col md-12">
+        <div class="page-header">
+          <h1>Projects</h1>
+        </div>
+        <!-- MySQL's tutor -->	
+        <div class="col-xs-12 col-md-6">
+          <div class="card-project mdl-card mdl-shadow--2dp col-xs-12 col-md-12">
+            <div id = "mysqltutor-cover" class="mdl-card__title">
+              <h2 class="mdl-card__title-text">MySQL's tutor</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h5>Interactive standalone tool for learn MySQL</h5>
+              <h6 class="text-justify">MySQL tutor makes a semantic analysis in order to identify and process
+                instructions. Each command has an animation with tables, different speeds, etc.
+                Semantic analysis is made by <strong>ANTLR</strong> and <strong>Java</strong>, and
+                animations with <strong>JavaFX</strong>.
+              </h6>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                href="https://github.com/FabianConP/mysql-tutor">
+              Check it
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                id="show-dialog">
+              <i class="material-icons">perm_media</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Recapp -->
+        <div class="col-xs-12 col-md-6">
+          <div class="card-project mdl-card mdl-shadow--2dp col-xs-12 col-md-12">
+            <div id="recapp-cover" class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Recapp</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h5>Find the closest point to recycle</h5>
+              <h6 class="text-justify">Mobile app to find the closest recycle points using 
+                government open data with local and cloud storage. Connectivity to social networks 
+                (Google + and Facebook). Allowed the creation of public campaigns. Developed in <strong>Java</strong>, 
+                <strong>Android Studio</strong>, <strong>Google Cloud</strong>.
+              </h6>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                href="https://github.com/TuApp/Recapp">
+              Check it
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                id="show-dialog">
+              <i class="material-icons">perm_media</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- AstroUN -->
+        <div class="col-xs-12 col-md-6">
+          <div class="card-project mdl-card mdl-shadow--2dp col-xs-12 col-md-12">
+            <div id="astroun-cover" class="mdl-card__title">
+              <h2 class="mdl-card__title-text">AstroUN</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h5>Play and learn about recycling</h5>
+              <h6 class="text-justify">Educational video game based on recycling, 
+                designed in 2D. Intended to teach users how the contamination affects 
+                daily life. Developed in <strong>C#</strong> and <strong>Unity</strong>.
+              </h6>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                href="https://github.com/FabianConP/AstroUN">
+              Check it
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                id="show-dialog">
+              <i class="material-icons">perm_media</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- UNFlea+ -->
+        <div class="col-xs-12 col-md-6">
+          <div class="card-project mdl-card mdl-shadow--2dp col-xs-12 col-md-12">
+            <div id ="unflea-cover" class="mdl-card__title">
+              <h2 class="mdl-card__title-text">UNFlea+</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <h5>Play and learn about recycling</h5>
+              <h6 class="text-justify">Website created to buy, sell or exchange items. 
+                Hosted in Openshift. Developed in <strong>Groovy & Grails</strong>, <strong>HTML</strong>, 
+                <strong>JQuery</strong>.
+              </h6>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                href="https://github.com/virttuall/UNFlea-">
+              Check it
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                id="show-dialog">
+              <i class="material-icons">perm_media</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    </div>
+  </body>
 </html>

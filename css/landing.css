@@ -28,6 +28,10 @@
     padding-top: 12px;
 }
 
+.mdl-layout__container{
+    background-color: #ECEFF1;
+}
+
 
 /* Content */
 
@@ -42,6 +46,18 @@
 }
 
 /* Projects */
+#projects-wrapper .page-header, h1{
+    color: white;
+    border: 0;
+    margin: 0;
+}
+
+#projects-wrapper .page-header{
+    background-color: #37474F;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
 .card-project {
   margin-bottom: 16px;
 }
@@ -49,8 +65,13 @@
 .card-project > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('../images/welcome_card.jpg') center / cover;
 }
+
+  /*background: url('../images/welcome_card.jpg') center / cover;*/
+#mysqltutor-cover{
+  background: url('../images/mysqltutor/cover.jpg') center / cover;
+}
+
 .card-project > .mdl-card__menu {
   color: #fff;
 }
